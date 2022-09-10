@@ -1,0 +1,94 @@
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url("images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  padding: 2% 4%;
+}
+
+button {
+  padding: 15px 55px;
+  color: hsl(257, 40%, 49%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  border-radius: 25px;
+  margin-top: 10px;
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4%;
+  margin: 7% 0;
+}
+
+.content h1 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.content p {
+  color: #ddd2d2;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+footer {
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: inline-block;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.social {
+  float: right;
+}
+
+.social * {
+  padding: 5px 5px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.fa-brands {
+  color: #fff;
+}
+
+.fa-brands:hover {
+  cursor: pointer;
+  color: hsl(300, 69%, 71%);
+  border: 1px solid hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    margin: 30% 0;
+    row-gap: 10%;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  button {
+    margin-top: 20px;
+  }
+}
